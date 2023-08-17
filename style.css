@@ -3,6 +3,19 @@
     text-align: center;
 }
 
-
 /* INDEX.HTML */
 
+    /*NAV*/
+    /*Currently this is not working.*/
+    .logo-1 {
+        transform: rotate(-45deg);
+    }
+
+
+    /*HERO*/
+    
+
+    /*Currently this is not working.*/
+    .savings-img {
+        filter: blur(20%);
+    }
