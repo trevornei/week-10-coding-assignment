@@ -44,14 +44,16 @@
           </div>
         </div>
       </div>
-
+      <!--Table-->
       <div class="container mx-5">
-        <table class="table">
+        <table class="table table-dark table-striped justify-content-center">
           <thead>
+            <tr>
+              <h1>Leave a review!</h1>
+            </tr>
             <tr>
               <th scope="col">#</th>
               <th scope="col">First</th>
-              <th scope="col">Last</th>
               <th scope="col">Handle</th>
             </tr>
           </thead>
@@ -59,80 +61,38 @@
             <tr>
               <th scope="row">1</th>
               <td>Mark</td>
-              <td>Otto</td>
               <td>@mdo</td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>Jacob</td>
-              <td>Thornton</td>
               <td>@fat</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
+              <td>Larry the Bird</td>
               <td>@twitter</td>
             </tr>
           </tbody>
         </table>  
       </div>
-      <div id="form-cont" class="mx-5">
+      <!--Form-->
+      <div id="form-cont" class="mx-5 my-5">
         <form>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <label for="name" class="form-label" placeholder="Name">Name</label>
+            <input type="text" class="form-control" id="name">
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Review</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="review" class="form-label" placeholder="Review">Review</label>
+            <input type="text" class="form-control" id="review">
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary form-control">Submit</button>
         </form>
-      </div>
-        
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
       </div>
     <!--Footer-->
 
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
