@@ -3,10 +3,10 @@ let id = 0;
 
 document.getElementById('add').addEventListener('click', () => {
     // 1. Create an element that refers to the <table> element.
-    let table = document.getElementById('list')
+    let table = document.getElementById('list');
     // 2. Create a variable that will create a new row.
-    // table.insertrow uses a built-in method to insert a row.
-    let row = table.insertrow(1);
+    // table.insertrow uses a built-in method to insert a row at the bottom of the list.
+    let row = table.insertrow(-1);
     // Each new row needs an id.
     /*
        The setAttribute() method can create or update attributes. 
@@ -16,8 +16,25 @@ document.getElementById('add').addEventListener('click', () => {
           you want to make.
        B) the second parameter the value you will assign to the attribute.
     */
-    row.setAttribute('id', `item-${id}`)
-    // Add a row using .insertcell(0)
-    document.insertCell(0).innerHTML = document.getElementById('name').value; 
-    document.insetCell(0).innerHTML = document.getElementById('review')
-})
+    row.setAttribute('id', `item-${id}`);
+    /*
+        insertCell() inserts data into table dataCell or <td> as represented in the HTML.
+            1. Create a variable for each cell that is being represented.
+                - Get the element by the id
+                - use dot notation plus .value to extract data from <form> input.
+    */
+   // Cell 0 is represents the id/review-number.
+   let cell1 = row.insertCell(0);
+   // Insert review number into table. 
+   cell1.innerHTML = id;
+
+   // <td> Represents users name.
+   let cell2 = row.insertCell(1);
+   // use .innerHTML to insert data from <form> into HTML.
+   cell2.innerHTML = document.getElementById('name').value;
+
+   let cell3 = row.insert(2);
+   cell3.innerHTML = document.getElementById('review').value;
+
+   // Final Step: Use the postfix increment to change the id number for a new review.
+});
