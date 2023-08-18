@@ -1,10 +1,10 @@
 // Each review needs a review number so we will create a variable called let and set the value to zero.
 let id = 0;
 
-document.getElementById('add').addEventListener('click', (event) => {
+document.getElementById('add').addEventListener('click', () => {
     // 1. Create an element that refers to the <table> element.
     let table = document.getElementById('list');
-    event.preventDefault();
+
     // 2. Create a variable that will create a new row.
     // table.insertrow uses a built-in method to insert a row at the bottom of the list.
     let row = table.insertRow(-1);
